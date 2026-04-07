@@ -1,0 +1,368 @@
+*{
+    margin:0;
+    padding:0;
+    overflow-x: hidden;
+}
+/*WHERE HAVE I USED AI?
+257->height:auto(allows the section to expand so nothing gets cut off.)
+197->object-fit:cover(to fit the image into frame)
+32->background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("eclat 1.jpg");*/
+.top{
+    display: flex;
+    padding: 4px 10px 2px 10px;
+    box-shadow: 0 1px 50px 10px rgba(28, 23, 23, 0.5);
+    justify-content: space-between;
+    border-radius: 5px;    
+}
+.navbar{
+    display:flex;
+    align-items: center;
+    padding-right: 16px;
+    gap:30px;
+    flex-wrap: wrap;
+    
+    a{
+        text-decoration: none;
+        color: darkgoldenrod;
+    }
+    font-family:'Times New Roman', Times, serif;
+}
+.main1{
+    /*IMG RESOLUTION THEEK KRNE KE LIYE-GRADIENT LAGA DIYA*/
+    background-attachment: fixed;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("eclat 1.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+
+    /*Parent m hone chahiye!!-imp*/
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+
+    .hero-section{
+        font-size: 40px;
+        background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+        padding: 8px 24px;
+        border-radius: 20px;
+        color: aliceblue;
+        text-align: center;
+        font-family:'Times New Roman', Times, serif;
+
+        .button-section{
+            margin-top:10px;
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            font-size: 30px;
+
+            button{
+                padding:10px 10px 10px 10px;
+                border-radius: 30px;
+                font-family:Georgia, 'Times New Roman', Times, serif;
+                background-color: antiquewhite;
+                font-size: medium;
+                a{
+                    color: black;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+.main2{/*women gift*/
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("boy-background.png");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+    width: 100%;
+
+    display:flex;
+    gap:100px;
+    align-items: center;
+    justify-content: center;
+}
+.main3{/*men gift*/
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("women\ gift\ background\ image.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    
+    background-attachment: fixed;
+
+    gap:100px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.main4{/*wedding gifts*/
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("wedding\ gift\ background.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+
+    gap:100px;
+    display:flex;
+    align-items: center;
+    background-attachment: fixed;
+    justify-content: center;
+}
+.main5{/*feedback*/
+    /*center align ke liyee parent pr lagta h*/
+        display:flex ;
+        justify-content: center;
+        background-attachment: fixed;
+        align-items: center;
+    .feedback-container {
+        
+        color: aliceblue;
+        margin: 50px ;
+        padding: 30px;
+        background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("feedback\ bg\ .jpg");
+        background-size: cover;
+        border: 1px solid #eee;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        border-radius: 10px;
+        text-align: center;
+        font-family: 'Times New Roman', serif;
+        input,textarea,select{
+            
+            border-radius: 10px;
+            margin: 5px 5px 5px 5px;
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        
+        button{
+            padding:10px 10px 10px 10px;
+            border-radius: 30px;
+            color: aliceblue;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            background-color: rgb(56, 170, 211);
+            font-size: medium;
+            a{
+                color: black;
+                text-decoration: none;
+            }
+        }
+    }
+}
+.main6{/*user exp*/
+    
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("user\ exp\ background.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    background-attachment: fixed;
+    border-radius: 20px;
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+    .reviews-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 40px 20px;
+    }
+
+    .review-card {
+        background: rgba(255, 255, 255, 0.95);
+        width: 280px;
+        height: 300px;
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        font-family: 'Times New Roman', serif;
+       
+    }
+    .user-info {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 15px;
+    }
+
+    .user-photo {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%; 
+        object-fit: cover;/*IMG KO FRAME M FIT KRNE KE LIYEE*/
+        border: 2px solid darkgoldenrod;
+    }
+
+    .user-meta h4 {
+        margin: 0;
+        color: #222;
+        font-size: 18px;
+    }
+
+    .rating {
+        color: darkgoldenrod;
+        font-size: 14px;
+        margin-top: 2px;
+    }
+
+    .user-comment {
+        font-size: 25px;
+        color: #555;
+        line-height: 1.5;
+        font-style: italic;
+    }
+}
+footer{
+    
+    a{
+        padding-top: 3px;
+        color: rgb(14, 39, 95);         
+    }
+    color:rgb(229, 181, 6);
+    height: 30vh;
+    
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px;
+    align-items: center;
+    justify-content: space-around;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    .about-footer p {
+        font-size: 16px;
+        padding-top: 20px;
+        color: #08113a; 
+        font-family: Georgia, serif;
+        
+        
+    }
+    
+    footer {
+        
+        align-items: flex-start; 
+        padding-top: 40px;
+    }
+
+    
+}
+.main5{
+    background-color: #eee;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    border-radius: 30px;
+}
+
+.main2, .main3, .main4,.main5, .main6 {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;   
+    justify-content: flex-start; 
+    padding: 60px 20px;     
+    height: auto;/*"auto means Make this container exactly as tall as the stuff inside it."*/            
+    gap: 40px;          
+}
+.start{
+    display: flex;
+    flex-direction: row;
+    gap:50px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+h1 {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    padding: 15px 40px;
+    border-radius: 50px;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    
+    flex-direction: column;
+    top: 40px;
+}
+.category-card {
+    background: white;
+    width: 320px;
+    border-radius: 15px;
+    img{border-radius: 15px;}
+    box-shadow: 0 15px 35px rgba(0,0,0,2);
+    font-family: 'Times New Roman', serif;
+    position: relative;
+}
+
+.card-img-container {
+    height: 230px;
+}
+
+.card-img-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.discount-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #d4a017; /* Gold shade */
+    color: white;
+    padding: 5px 12px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 20px;
+    
+}
+.card-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.card-content h3 {
+    color: #222;
+    margin-bottom: 8px;
+    
+}
+
+.product-details {
+    font-size: 14px;
+    color: #666;
+    font-style:italic;
+    margin-bottom: 15px;
+   
+}
+
+.price-section {
+    margin-bottom: 20px;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #999;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.discount-price {
+    color: darkgoldenrod;
+    font-size: 22px;
+    font-weight: bold;
+}
+.buy-btn {
+    width: 100%;
+    background-color: #111;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
